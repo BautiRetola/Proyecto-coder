@@ -257,28 +257,31 @@ footer a img{
 
 /*!----.AROMATIZANTES----*/
 
+
+
 .aromatizantes{
-    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.aromatizantes
-
-.aromatizantes div{
-    border: 1px solid grey;
-    width: 251px;
+.aromatizantes div {
+    border: 1px solid black;
+    width: 250px;
     height: 350px;
     text-align: center;
     margin: 15px;
 }
 
-.aromatizantes div a{
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
+.aromatizantes div a:hover{
+    color: aqua;
 }
 
 .aromatizantes div img{
     width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .aromatizantes div h3{
@@ -290,9 +293,8 @@ footer a img{
     text-decoration: none;
     color: white;
     padding: 10px;
+    border-radius: 5px;
 }
-
-
 
 
 
