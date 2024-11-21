@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/*!----HEADER-ENCABEZADO----*/
+
+header{
+    background-color: black;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    color: #9bcaca;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 10px 5px 10px 5px;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: #9bcaca;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+}
+
+.fixed img{
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+/*!----CONTENIDO PRINCIPAL/MAIN----*/
+
+
+.hero{
+    height: 500px;
+    text-align: center;
+    color: black;
+    background-image: url(../img/tienda-perfuems.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-attachment: fixed; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2{
+    font-size: 60px;
+}
+
+.hero p{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.hero a:hover{
+    color: aqua;
+}
+
+.bienvenida{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenida div{
+    width: 50%;
+    padding: 15px;
+}
+
+.bienvenida div h2{
+    font-size: 20px;
+}
+
+.bienvenida div p{
+    font-size: 20px;
+}
+
+.bienvenida img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.aroma{
+    margin: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.aroma div{
+    width: 50%;
+    padding: 15px;
+}
+
+.aroma div h2{
+    font-size: 20px;
+}
+
+.aroma div p{
+    font-size: 20px;
+}
+
+.aroma img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+.productos h2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.productos .productos-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.productos .productos-contenedor div {
+    border: 1px solid black;
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    margin: 15px;
+}
+
+.productos div a:hover{
+    color: aqua;
+}
+
+.productos div img{
+    width: 250px;
+}
+
+.productos div h3{
+    margin-bottom: 20px;
+}
+
+.productos div a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+    margin: 25px;
+}
+
+.grid-galeria div{
+    position: relative;
+}
+
+.grid-galeria div h3{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 255, 255, 0.607);
+    width: 100%;
+    color: white;
+    padding: 5px;
+}
+
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*!----PIE DE PAGINA/FOOTER----*/
+
+footer{
+    background-color: #9bcaca;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer h2{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+footer a img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*!----.AROMATIZANTES----*/
+
+.aromatizantes{
+    margin-top: 100px;
+}
+
+.aromatizantes
+
+.aromatizantes div{
+    border: 1px solid grey;
+    width: 251px;
+    height: 350px;
+    text-align: center;
+    margin: 15px;
+}
+
+.aromatizantes div a{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.aromatizantes div img{
+    width: 250px;
+}
+
+.aromatizantes div h3{
+    margin-bottom: 20px;
+}
+
+.aromatizantes div a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*!----Media Queries----*/
+
+@media screen and (max-width:1040px){
+    header h1{
+        font-size: 40px;
+    }
+}
+
+
+
+
+@media screen and (max-width:800px){
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        font-size: 45px;
+    }
+
+    .hero h2{
+        font-size: 50px;
+    }
+
+    .bienvenida{
+        flex-direction: column;
+     }
+     .bienvenida div{
+        width: 100%;
+     }
+     .bienvenida div h2{
+        text-align: center;
+     }
+
+     .aroma{
+        flex-direction: column;
+     }
+     .aroma div{
+        width: 100%;
+     }
+     .aroma div h2{
+        text-align: center;
+     }
+
+     .grid-galeria{
+        grid-template-columns: 1fr 1fr ;
+     }
+}
+
+
+@media screen and (max-width:610px){
+    header h1{
+        font-size: 40px;
+    }
+
+     .bienvenida{
+        flex-direction: column;
+     }
+     .bienvenida div{
+        width: 100%;
+     }
+     .bienvenida div h2{
+        text-align: center;
+     }
+
+     .aroma{
+        flex-direction: column;
+     }
+     .aroma div{
+        width: 100%;
+     }
+     .aroma div h2{
+        text-align: center;
+     }
+     
+     footer{
+        flex-direction: column;
+     }
+     footer h2{
+        font-size: 40px;
+     }
+}
+
+@media screen and (max-width:500px){
+    footer{
+        flex-direction: column;
+    }
+    footer h2{
+        font-size: 30px;
+    }
+    .grid-galeria{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
