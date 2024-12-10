@@ -387,6 +387,10 @@ footer a img{
 }
 
 @media screen and (max-width:500px){
+    header h1{
+        font-size: 35px;
+
+    }
     footer{
         flex-direction: column;
     }
@@ -398,7 +402,12 @@ footer a img{
     }
 }
 
-
+@media screen and (max-width:420px){
+    header h1{
+        font-size: 30px;
+    }   
+}
+ 
 
 
 
