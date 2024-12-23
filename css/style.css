@@ -441,7 +441,7 @@ input[type="submit"] {
      }
      
      footer{
-        flex-direction: column;
+        flex-direction: row;
      }
      footer h2{
         font-size: 40px;
@@ -454,7 +454,7 @@ input[type="submit"] {
 
     }
     footer{
-        flex-direction: column;
+        flex-direction: row;
     }
     footer h2{
         font-size: 30px;
@@ -467,32 +467,54 @@ input[type="submit"] {
 @media screen and (max-width:420px){
     header h1{
         font-size: 30px;
-    }   
+        flex-direction: column;
+    }
+    
+    .hero h2{
+        font-size: 25px;
+    }
+
+    .hero p{
+        font-size: 15px;
+    }
+
+    .bienvenida div p{
+        font-size: 15px;
+    }
+
+    .bienvenida img{       
+        width: 400px;
+        height: 400px;  
+        object-fit: cover;     
+    }
+
+    .aroma div p{
+        font-size: 15px;
+    }
+
+    .aroma img{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .productos h2{
+        font-size: 20px;
+    }
+
+    footer{
+        flex-direction: row;
+    }
 }
- 
 
+@media screen and (max-width:375px){
+    header h1{
+        font-size: 25px;
+        flex-direction: column;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    footer h2{
+        font-size: 20px;
+    }
+    
+}
